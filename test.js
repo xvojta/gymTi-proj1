@@ -1,1 +1,11 @@
-alert("Hello world");``
+function test(green)
+{
+    if(green)
+    {
+        alert("Green");
+    }
+    else
+    {
+        alert("Blue");
+    }
+}
