@@ -1,11 +1,11 @@
-function test(green)
+var value = 0;
+
+function test(number)
 {
-    if(green)
-    {
-        alert("Green");
-    }
-    else
-    {
-        alert("Blue");
-    }
+    value += number;
+}
+
+function getValue()
+{
+    alert(value);
 }

@@ -18,15 +18,39 @@
   background-color: black;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    width: 200px;
+}
+
 .button1 {background-color: #04AA6D;} /* Green */
 .button2 {background-color: #008CBA;} /* Blue */
+
+.buttonLast {
+    background-color: #ba6900;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 </style>
 </head>
 <body>
 
     <script src="test.js"></script>
-<button class="button button1", onclick="test(true)">Green</button>
-<button class="button button2", onclick="test(false)">Blue</button>
+
+    <div class="grid">
+        <button class="button button1", onclick="test(1)">1</button>
+        <button class="button button2", onclick="test(2)">2</button>
+        <button class="button button1", onclick="test(3)">3</button>
+        <button class="button button2", onclick="test(4)">4</button>
+        <button class="button button1", onclick="test(5)">5</button>
+        <button class="button button2", onclick="test(6)">6</button>
+        <button class="button button1", onclick="test(7)">7</button>
+        <button class="button button2", onclick="test(8)">8</button>
+        <button class="button button1", onclick="test(9)">9</button>
+        <button class="button buttonLast", onclick="getValue()">Submit</button>
+    </div>
 
 </body>
 </html>
