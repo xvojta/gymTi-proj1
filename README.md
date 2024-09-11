@@ -17,3 +17,4 @@ class Random
 - Test seznamu #3
 - Test seznamu #4
 - Test seznamu #5
+- Test seznamu #6
